@@ -1,0 +1,44 @@
+.features-container{
+    background: #323232;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+    .wave{
+        width: 100%;
+        position: absolute;
+        bottom: -20%;
+        left: 0;
+        z-index: -1;
+    }
+}
+.feature{
+   min-height: 90vh;
+   width: 80%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   .cards{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    .card{
+        background: white;
+        margin: 0rem 3rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 2rem;
+        overflow: hidden;
+        img{
+            object-fit: cover;
+        }
+        h4{
+            margin: 2rem 0rem 1rem 0rem;
+        }
+        p{
+            padding: 1rem 0rem 2rem 0rem;
+        }
+        }
+    }
+}
