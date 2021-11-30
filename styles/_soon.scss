@@ -2,6 +2,7 @@
     background: radial-gradient(#525252, #131313);
     min-height: 80vh;
     position: relative;
+    overflow: hidden;
     z-index: 0;
     img, .circle, h2{
         position: absolute;
@@ -19,4 +20,5 @@
     .camera{
         z-index: 1;
     }
+    
 }

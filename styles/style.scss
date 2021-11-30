@@ -41,3 +41,60 @@ a{
 @import 'features';
 @import 'soon';
 @import 'footer';
+
+@media screen and (max-width: 1200px) {
+    #logo{
+        flex: 1;
+    }
+    li{
+        font-size: 1.5rem;
+    }
+    .feature{
+        .cards{
+            flex-direction: column;
+            .card{
+                margin: 3rem 0;
+            }
+        }
+    }
+    .soon{
+        overflow: hidden;
+    }
+    .showcase{
+        grid-template-columns: 10% 1fr 10%;
+       grid-template-rows: 2fr 2fr 3fr;
+        h2, img, .info{
+            grid-column: 2/3;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+        h2{
+            align-self: center;
+        }
+        .info{
+            align-self: center;
+            font-style: italic;
+        }
+    }
+    .soon{
+        img{
+           width: 100%;
+           object-fit: contain;
+        }
+        h2{
+            font-size: 4rem;
+            text-align: center;
+        }
+    }
+    footer{
+        .footer-section{
+            h1{
+                flex: 1;
+            }
+            
+        }
+    }
+}
